@@ -1,4 +1,3 @@
-//存放本地的mock文件
 import {MockMethod} from 'vite-plugin-mock';
 
 import users from './source/users';
