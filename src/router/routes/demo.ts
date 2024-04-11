@@ -26,6 +26,14 @@ const routes: RouteRecordRaw = {
             meta: {
                 title: 'PINIA_INDEX',
             },
+        },
+        {
+            path: 'axios',
+            name: 'AXIOS_INDEX',
+            component: () => import('@/views/demo/axios.vue'),
+            meta: {
+                title: 'AXIOS_INDEX',
+            },
         }
     ]
 }
