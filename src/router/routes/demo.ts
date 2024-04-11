@@ -4,7 +4,7 @@ const LAYOUT = () => import('@/layouts/demo/index.vue');
 
 const routes: RouteRecordRaw = {
     path: '/demo',
-    name: 'demo',
+    name: 'DEMO',
     component: LAYOUT,
     redirect: '/demo/index',
     meta: {
@@ -13,12 +13,20 @@ const routes: RouteRecordRaw = {
     children: [
         {
             path: 'index',
-            name: 'DEMO',
+            name: 'DEMO_INDEX',
             component: () => import('@/views/demo/index.vue'),
             meta: {
-                title: 'DEMO',
+                title: 'DEMO_INDEX',
             },
         },
+        {
+            path: 'pinia',
+            name: 'PINIA_INDEX',
+            component: () => import('@/views/demo/pinia.vue'),
+            meta: {
+                title: 'PINIA_INDEX',
+            },
+        }
     ]
 }
 
